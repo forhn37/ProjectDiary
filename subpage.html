@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>개인프로젝트 일기장 - 서브페이지</h1>
+    </header>
+    <main>
+        <div class="left-box">
+            <!-- 서브페이지 내용 -->
+            <div class="right-box">
+              <!-- 서브페이지 동적 생성을 위한 폼 -->
+              <form action="/main.html" method="POST"> <!-- 서버 엔드포인트 수정 필요 -->
+                  <label for="project-start-date">시작 날짜</label>
+                  <input type="date" id="project-start-date" name="project-start-date" required>
+          
+                  <label for="project-end-date">완료 날짜</label>
+                  <input type="date" id="project-end-date" name="project-end-date" required>
+          
+                  <label for="project-topic">프로젝트 주제</label>
+                  <input type="text" id="project-topic" name="project-topic" required>
+          
+                  <label for="project-image-url">이미지 URL</label>
+                  <input type="text" id="project-image-url" name="project-image-url" required>
+          
+                  <label for="feelings">느낀 점</label>
+                  <textarea id="feelings" name="feelings" required></textarea>
+          
+                  <input type="submit" value="저장">
+              </form>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
