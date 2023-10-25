@@ -7,6 +7,24 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>서브페이지</h1>
+  <form action="/main" method="post">
+    <label for="project-name">프로젝트명:</label>
+    <input type="text" id="project-name" name="project-name" required>
   
+    <label for="start-date">시작 날짜:</label>
+    <input type="text" id="start-date" name="start-date" placeholder="YYYY-MM-DD" required>
+  
+    <label for="end-date">완료 날짜:</label>
+    <input type="text" id="end-date" name="end-date" placeholder="YYYY-MM-DD" required>
+  
+    <label for="repository-url">Git Repository URL:</label>
+    <input type="text" id="repository-url" name="repository-url" required>
+  
+    <label for="project-notes">느낀 점:</label>
+    <textarea id="project-notes" name="project-notes" rows="4" required></textarea>
+  
+    <input type="submit" value="게시물 작성">
+  </form>
 </body>
 </html>
